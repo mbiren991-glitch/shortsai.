@@ -6,7 +6,7 @@ function generateShort() {
     result.innerHTML = "❌ Please enter a video topic.";
     return;
   }
-
+document.getElementById("preview").style.display = "none";
   result.innerHTML = "⏳ AI is writing your script...";
 
   setTimeout(function () {
