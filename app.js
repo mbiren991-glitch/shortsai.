@@ -1,9 +1,10 @@
 function generateShort() {
   const topic = document.querySelector("input").value;
+  const result = document.getElementById("result");
 
   if (topic === "") {
-    alert("Please enter a video topic.");
+    result.innerHTML = "❌ Please enter a video topic.";
   } else {
-    alert("Generating AI Short for: " + topic);
+    result.innerHTML = "🤖 AI is generating a short about: <b>" + topic + "</b>";
   }
 }
