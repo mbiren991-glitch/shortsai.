@@ -7,10 +7,18 @@ function generateShort() {
     return;
   }
 
-  result.innerHTML = "⏳ AI is generating your short...";
+  result.innerHTML = "⏳ AI is writing your script...";
 
   setTimeout(function () {
-    result.innerHTML =
-      "✅ Your AI Short about <b>" + topic + "</b> is ready!";
+    result.innerHTML = `
+      <h3>🎬 AI Script</h3>
+      <p><b>Topic:</b> ${topic}</p>
+
+      <p>
+      Welcome! Today we'll learn about <b>${topic}</b>.
+      Here are three important facts you should know.
+      If you enjoyed this short, don't forget to like and subscribe!
+      </p>
+    `;
   }, 3000);
 }
