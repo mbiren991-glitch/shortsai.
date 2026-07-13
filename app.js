@@ -4,7 +4,13 @@ function generateShort() {
 
   if (topic === "") {
     result.innerHTML = "❌ Please enter a video topic.";
-  } else {
-    result.innerHTML = "🤖 AI is generating a short about: <b>" + topic + "</b>";
+    return;
   }
+
+  result.innerHTML = "⏳ AI is generating your short...";
+
+  setTimeout(function () {
+    result.innerHTML =
+      "✅ Your AI Short about <b>" + topic + "</b> is ready!";
+  }, 3000);
 }
