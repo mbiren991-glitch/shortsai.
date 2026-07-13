@@ -10,7 +10,7 @@ document.getElementById("preview").style.display = "none";
   result.innerHTML = "⏳ AI is writing your script...";
 
   setTimeout(function () {
-    result.innerHTML = `
+    document.getElementById("preview").style.display = "block";result.innerHTML = `
       <h3>🎬 AI Script</h3>
       <p><b>Topic:</b> ${topic}</p>
 
